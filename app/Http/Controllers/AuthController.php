@@ -1,5 +1,5 @@
 <?php
-
+// Untuk autentikasi, Login, Dan register
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -31,7 +31,7 @@ class AuthController extends Controller
     
 
     return back()->withErrors([
-        'email' => 'The provided credentials do not match our records.',
+        'email' => 'Email atau password yang anda masukkan salah',
     ]);
 }
 

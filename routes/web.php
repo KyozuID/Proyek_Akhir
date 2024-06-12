@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\StudentController;
-use App\Http\Controllers\UserController; // Tambahkan UserController jika belum ada
+use App\Http\Controllers\UserController; 
 
 Route::get('/', function () {
     return redirect()->route('login');
@@ -15,7 +15,7 @@ Route::post('register', [AuthController::class, 'register']);
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/user', [UserController::class, 'index'])->name('user.index'); // Ganti rute dashboard menjadi user.index
+    Route::get('/user', [UserController::class, 'index'])->name('user.index'); 
     Route::get('/user/info', [UserController::class, 'info'])->name('user.info');
 
     Route::get('/info', function () {

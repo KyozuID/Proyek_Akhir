@@ -1,4 +1,4 @@
-<!-- resources/views/students/show.blade.php -->
+
 
 @extends('layouts.app')
 

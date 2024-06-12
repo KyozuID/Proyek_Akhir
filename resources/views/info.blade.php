@@ -8,7 +8,7 @@
                     <div class="card-header" style="background-color: red; color: white;">Informasi Penting</div>
 
                     <div class="card-body">
-                        <table class="table mx-auto"> <!-- Tambahkan kelas mx-auto di sini -->
+                        <table class="table mx-auto"> 
                             <thead>
                                 <tr>
                                     <th>Point</th>
@@ -37,7 +37,7 @@
                     </div>
 
                     <div class="card-body">
-                        <table class="table mx-auto"> <!-- Tambahkan kelas mx-auto di sini -->
+                        <table class="table mx-auto"> 
                             <thead>
                                 <tr>
                                     <th>Jenis Pelanggaran</th>

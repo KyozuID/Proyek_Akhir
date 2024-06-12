@@ -13,6 +13,4 @@ class Student extends Model
         'name', 'kelas', 'jurusan', 'point',
     ];
 
-    // Tambahan kode atau metode di sini jika diperlukan
-
 }

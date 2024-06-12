@@ -27,7 +27,7 @@
         .login-container h1 {
             font-weight: 500;
             margin-bottom: 20px;
-            color: #333; /* Ubah warna judul menjadi abu-abu lebih gelap */
+            color: #333; 
         }
         .login-container form {
             display: flex;
@@ -39,11 +39,11 @@
             margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
-            color: #333; /* Ubah warna teks input */
+            color: #333; 
         }
         .login-container button {
             padding: 10px;
-            background-color: #007bff; /* Ubah warna tombol menjadi biru */
+            background-color: #007bff; 
             color: white;
             border: none;
             border-radius: 4px;
@@ -51,14 +51,14 @@
             font-weight: 500;
         }
         .login-container button:hover {
-            background-color: #0056b3; /* Ubah warna tombol saat dihover menjadi biru lebih gelap */
+            background-color: #0056b3; 
         }
         .login-container .register-link {
             margin-top: 10px;
             font-size: 0.9em;
         }
         .login-container .register-link a {
-            color: #007bff; /* Ubah warna tautan menjadi biru */
+            color: #007bff;
             text-decoration: none;
         }
     </style>

@@ -1,4 +1,4 @@
-<!-- resources/views/user/info.blade.php -->
+
 
 @extends('layouts.user_layout')
 
@@ -16,7 +16,7 @@
                         <p><strong>Point 100 :</strong> Peringatan pertama</p>
                     </div>
                     <div class="card-body">
-                        <table class="table mx-auto"> <!-- Tambahkan kelas mx-auto di sini -->
+                        <table class="table mx-auto">
                             <thead>
                                 <tr>
                                     <th>Jenis Pelanggaran</th>

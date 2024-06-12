@@ -1,5 +1,5 @@
 <?php
-
+// Untuk CRUD
 namespace App\Http\Controllers;
 
 use App\Models\Student;
@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function index()
-{
-    $students = Student::all(); // Ambil semua data siswa
-    return view('students.index', compact('students')); // Meneruskan data siswa ke tampilan
-}
+    {
+    $students = Student::all(); 
+    return view('students.index', compact('students')); 
+    }
 
     public function create()
     {
@@ -22,14 +22,14 @@ class StudentController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'kelas' => 'required|string|max:255', // Validasi untuk kolom kelas
+            'kelas' => 'required|string|max:255', 
             'jurusan' => 'required|string|max:255',
             'point' => 'required|integer',
         ]);
 
         Student::create([
             'name' => $request->name,
-            'kelas' => $request->kelas, // Pastikan ini diisi
+            'kelas' => $request->kelas,
             'jurusan' => $request->jurusan,
             'point' => $request->point,
         ]);
@@ -51,14 +51,14 @@ class StudentController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'kelas' => 'required|string|max:255', // Validasi untuk kolom kelas
+            'kelas' => 'required|string|max:255', 
             'jurusan' => 'required|string|max:255',
             'point' => 'required|integer',
         ]);
 
         $student->update([
             'name' => $request->name,
-            'kelas' => $request->kelas, // Pastikan ini diisi
+            'kelas' => $request->kelas, 
             'jurusan' => $request->jurusan,
             'point' => $request->point,
         ]);
